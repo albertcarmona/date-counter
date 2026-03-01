@@ -1,6 +1,9 @@
 from datetime import datetime
 import streamlit as st
+import pytz
 import time
+
+madrid_tz = pytz.timezone('Europe/Madrid')
 
 final_date = datetime(2026, 3, 27, 0, 0, 0)
 
