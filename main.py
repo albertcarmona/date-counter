@@ -3,9 +3,8 @@ import streamlit as st
 import pytz
 import time
 
-madrid_tz = pytz.timezone('Europe/Madrid')
-
-final_date = datetime(2026, 3, 27, 0, 0, 0)
+madrid_tz = pytz.timezone('Europe/London')
+final_date = madrid_tz.localize(datetime(2026, 3, 27, 0, 0, 0))
 
 def main():
     now = datetime.now()
