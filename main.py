@@ -13,8 +13,12 @@ def main():
     st.title("Hans Zimmer Live Counter")
     st.subheader(f"Barcelona\t\tConcert Date: {final_date}")
     st.subheader("Minutes left:")
-    st.title(time_left.total_seconds() // 60)
     time.sleep(10)
+
+    col1, col2, col3 = st.columns(3)
+    with col2:
+        st.title(int(time_left.total_seconds() // 60))
+
     st.rerun()
 
 
