@@ -18,7 +18,7 @@ def main():
     
     col1, col2, col3 = st.columns(3)
     with col2:
-        st.title(f"{total_minutes}")
+        st.markdown(f"# {total_minutes}")
 
     time.sleep(10)
     st.rerun()
